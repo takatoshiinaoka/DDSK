@@ -2,6 +2,19 @@
 #include <stdlib.h>
 
 int main(){
+    char *DDSK[2] = {"ドド","スコ"};
+    int result = 0;
+    while(0x777 != (result&0x777)){
+        int LSD = rand()%2;
+        result <<= 1;
+        result = LSD|(result&~1);
+        printf("%s\n", DDSK[LSD]);
+    }
+    printf("ラブ注入❤︎");
+    return 0;
+}
+
+int main1(){
     char *ddsk[2] = {"ドド","スコ"};
     char *history[12] = {""};
     int count = 1;
