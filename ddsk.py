@@ -1,7 +1,7 @@
 import random
 
 DDSK = ["ドド","スコ"]
-End = "ドドスコスコスコ" * 3
+End = ("ドド" + "スコ" * 3) * 3
 judge = ""
 n = 0
 
